@@ -1,0 +1,25 @@
+[ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+dir               = /srv/pki
+certificate       = $dir/root-ca.crt
+private_key       = $dir/private/root-ca.key
+default_md        = sha384
+default_days      = 730
+policy            = policy_strict
+
+[ policy_strict ]
+countryName             = match
+organizationName        = match
+commonName              = supplied
+
+[ req ]
+default_bits        = 4096
+default_md          = sha384
+distinguished_name  = req_distinguished_name
+
+[ req_distinguished_name ]
+countryName = Country Name
+organizationName = Organization Name
+commonName = Common Name

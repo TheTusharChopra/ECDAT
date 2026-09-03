@@ -1,0 +1,3 @@
+# EXAMPLE ONLY -- placeholder values, not a deployed configuration
+ssl_protocols TLSv1.0;
+ssl_ciphers RC4-MD5:DES-CBC3-SHA;

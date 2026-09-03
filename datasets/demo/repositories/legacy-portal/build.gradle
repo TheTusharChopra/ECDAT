@@ -1,0 +1,5 @@
+dependencies {
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.58'
+    implementation 'commons-codec:commons-codec:1.11'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+}

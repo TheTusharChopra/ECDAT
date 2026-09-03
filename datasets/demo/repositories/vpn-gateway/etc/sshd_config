@@ -1,0 +1,9 @@
+Port 22
+Protocol 2
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+KexAlgorithms sntrup761x25519-sha512@openssh.com,curve25519-sha256,diffie-hellman-group14-sha1
+Ciphers aes256-gcm@openssh.com,aes128-ctr
+MACs hmac-sha2-256,hmac-sha1
+PubkeyAuthentication yes
+PasswordAuthentication no
