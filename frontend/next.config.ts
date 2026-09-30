@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
   devIndicators: {
     position: "bottom-right",
   },
+
+  async rewrites() {
+    const backendUrl = process.env.ECDAT_BACKEND_INTERNAL_URL || "http://127.0.0.1:8787";
+    return [
+      {
+        source: "/api/backend/:path*",
+        destination: `${backendUrl}/:path*`,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

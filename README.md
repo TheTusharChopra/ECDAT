@@ -2,13 +2,14 @@
 
 [![Python 3.14+](https://img.shields.io/badge/Python-3.14%2B-blue.svg)](https://www.python.org/)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16.3-black.svg)](https://nextjs.org/)
-[![Vercel Live](https://img.shields.io/badge/Vercel-Live%20Demo-000000.svg?logo=vercel&logoColor=white)](https://ecdat-app.vercel.app)
+[![Railway Full App](https://img.shields.io/badge/Railway-Full%20App%20(Frontend%2BBackend)-0B0D0E.svg?logo=railway&logoColor=white)](https://ecdat-production.up.railway.app)
+[![Vercel Frontend](https://img.shields.io/badge/Vercel-Frontend%20Mirror-000000.svg?logo=vercel&logoColor=white)](https://ecdat-app.vercel.app)
 [![CycloneDX 1.6](https://img.shields.io/badge/CycloneDX-1.6%20CBOM-green.svg)](https://cyclonedx.org/)
 [![Tests Passing](https://img.shields.io/badge/Tests-344%20Passing-brightgreen.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > **Deterministic, Graph-Aware Post-Quantum Cryptographic Discovery, Dual-Axis Risk Scoring, and Automated Migration Engine.**
-> 🌐 **Live Web Application:** [https://ecdat-app.vercel.app](https://ecdat-app.vercel.app)
+> 🌐 **Full-Stack Live Application (Frontend + Backend):** [https://ecdat-production.up.railway.app](https://ecdat-production.up.railway.app)
 
 ECDAT scans multi-language repositories, infrastructure configs, compiled binaries, and X.509 certificates to build a verified Cryptography Bill of Materials (CBOM). It assesses risks across independent classical and quantum axes, computes timeline urgency via Mosca's Inequality, calculates blast radius via dependency graph traversal, and outputs an executable, phased Post-Quantum Cryptography (PQC) migration roadmap.
 
