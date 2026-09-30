@@ -7,6 +7,7 @@ COPY frontend/package*.json ./
 RUN npm ci
 
 COPY frontend/ ./
+RUN mkdir -p public
 ENV NEXT_PUBLIC_ECDAT_API_URL="/api/backend"
 RUN npm run build
 
