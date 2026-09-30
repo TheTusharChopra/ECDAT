@@ -1,0 +1,16 @@
+name: Keep Render Instance Awake
+
+on:
+  schedule:
+    # Ping every 10 minutes so Render's 15-minute inactivity timer never triggers
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping ECDAT Live Backend
+        run: |
+          RESPONSE=$(curl -s -f -m 45 "https://ecdat-mm9g.onrender.com/api/backend/health" || true)
+          echo "Render Response: $RESPONSE"
