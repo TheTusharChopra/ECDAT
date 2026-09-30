@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ecdat
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_ECDAT_API_URL
+        value: /api/backend
+      - key: ECDAT_BACKEND_INTERNAL_URL
+        value: http://127.0.0.1:8787
